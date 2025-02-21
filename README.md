@@ -21,8 +21,10 @@ This project builds a chatbot using LangChain and OpenAI to answer questions abo
 1. **Clone the repository:**
 2. **Install dependencies:**
     - Run `pip install -r requirements.txt` in the project directory.
-3. Unzip the vector databse `chroma_db.zip` in the project directory. 
-4. **Set up OpenAI API Key:**
+3. **Unzip the vector databse**:
+    - Unzip chroma_db.zip` in the project directory.
+    - store the vector database folder with the name 'chroma_db'. 
+5. **Set up OpenAI API Key:**
    - Create a `.env` file in the project directory.
    - Add your OpenAI API key: `OPENAI_API_KEY=<your_api_key>`
 
@@ -31,6 +33,7 @@ This project builds a chatbot using LangChain and OpenAI to answer questions abo
 2. **Prepare the data:**
    - Download the `imdb_top_1000.csv` dataset and place it in the project directory.
    - Run `python run.py` to load the data, create the vector store, and initialize the chatbot.
+   - If the vector store is not present, create one by calling the `create_vector_store` in `run.py`
 3. **Interact with the chatbot:**
    - Use the `bot.query()` function to ask questions:
 
