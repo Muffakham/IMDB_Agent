@@ -21,7 +21,8 @@ This project builds a chatbot using LangChain and OpenAI to answer questions abo
 1. **Clone the repository:**
 2. **Install dependencies:**
     - Run `pip install -r requirements.txt` in the project directory.
-3. **Set up OpenAI API Key:**
+3. Unzip the vector databse `chroma_db.zip` in the project directory. 
+4. **Set up OpenAI API Key:**
    - Create a `.env` file in the project directory.
    - Add your OpenAI API key: `OPENAI_API_KEY=<your_api_key>`
 
