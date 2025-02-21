@@ -9,7 +9,8 @@ from agent import IMDBBot
 if __name__ == "__main__":
     dataset_path = "imdb_top_1000.csv"
     df = load_and_preprocess_data(dataset_path)
-    create_vector_store(df)
+    #Optional step: Run this if the vector database is not present to create a new one.
+    #create_vector_store(df) 
     vector_store = load_vector_store()
     bot = IMDBBot(df, vector_store)
     print(bot.query("Summarize the movie plots of Steven Spielberg’s top-rated sci-fi movies."))
